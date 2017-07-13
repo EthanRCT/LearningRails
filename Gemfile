@@ -56,3 +56,4 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.3'
 
 gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'crawford_taylor_view_tool', git: 'https://github.com/EthanRCT/crawford_taylor_view_tool'
