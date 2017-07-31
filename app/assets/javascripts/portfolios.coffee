@@ -25,6 +25,7 @@ ready = ->
 			type: 'PUT'
 			url: '/portfolios/sort'
 			data: order: updated_order
+		return
 	return
 	
 $(document).ready ready
