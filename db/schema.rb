@@ -27,15 +27,6 @@ ActiveRecord::Schema.define(version: 20170725164541) do
     t.index ["topic_id"], name: "index_blogs_on_topic_id", using: :btree
   end
 
-  create_table "bolgs", id: :bigserial, force: :cascade do |t|
-    t.string   "title"
-    t.text     "body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string   "slug"
-    t.index ["slug"], name: "index_bolgs_on_slug", unique: true, using: :btree
-  end
-
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string   "slug",                      null: false
     t.integer  "sluggable_id",              null: false
