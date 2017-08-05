@@ -1,8 +1,8 @@
 class Comment < ApplicationRecord
-  belongs_to :user
-  belongs_to :blog
+	belongs_to :user
+	belongs_to :blog
   
-  validates :content, presence: true, length: { minimum: 5, maximum: 1000 }
-  
-  after_create_commit { CommentBroadcastJob.perform_later(self) }
+	validates :content, presence: true, length: { minimum: 10, maximum: 500 }
+	
+	after_create_commit { CommentBroadcastJob.perform_later(self) }
 end
