@@ -28,4 +28,12 @@ module BlogsHelper
       'color: red;'
     end
   end
+  
+  def blog_status_title(blog)
+    if blog.draft?
+      'publish'
+   else
+      'draft'
+    end
+  end
 end
