@@ -1,7 +1,5 @@
 <div class="app-card-container">
   <div class="card">
-    
-    
     <h1>About Me</h1>
     
     <hr>
@@ -14,6 +12,53 @@
       <div class ="col-md-8">
         <h2>More About Me</h2>
         <p>I enjoy memes:</p>
+        
+        <p>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#jobHistory"
+            aria-expanded="false"
+            aria-controler="jobHistory"
+          >
+            Job History
+          </button>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#education"
+            aria-expanded="false"
+            aria-controler="education"
+          >
+            Education
+          </button>
+          <p>
+            <div class="collapse" id="jobHistory">
+              <div class="card card-block">
+                Job 1
+              </div>
+              <div class="card card-block">
+                Job 2
+              </div>
+              <div class="card card-block">
+                Job 3
+              </div>
+            </div>
+            <div class="collapse" id="education">
+              <div class="card card-block">
+                School 1
+              </div>
+              <div class="card card-block">
+                School 2
+              </div>
+              <div class="card card-block">
+                School 3
+              </div>
+            </div>
+          </p>
+        </p>
       </div>
       
     </div>
